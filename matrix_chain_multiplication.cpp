@@ -1,3 +1,4 @@
+  
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -24,4 +25,12 @@ int matrixmul(int p[],int n)
         }
     }
     return m[0][n-1];
+}
+int main() 
+{ 
+    int arr[] = {1, 2, 3, 4, 3}; 
+    int n = sizeof(arr)/sizeof(arr[0]); 
+  
+    cout << "Minimum number of multiplications is "
+         << matrixmul(arr,n-1); 
 }
